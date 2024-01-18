@@ -158,8 +158,8 @@ Definir "rules" en el ***webpack.config.js***
             rules: [
                 ...
                 {
-                    test: /\.(css|scss)$/,
-                    use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
+                    test: /\.css$/,
+                    use: ['style-loader', 'css-loader']
                 },
                 ...
             ]
@@ -284,7 +284,12 @@ Configurar "scripts" en el ***package.json***
 Configurar bootstrap en el ***index.js***
 ```javascript
     import 'bootstrap';
+    import 'bootstrap/dist/css/bootstrap.min.css';
 ```
+
+## Instalar Prop-Types (opcional)
+
+    $ npm i --save prop-types
 
 ## Instalar Dotenv para leer variables de entorno
 
