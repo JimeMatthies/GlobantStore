@@ -3,7 +3,7 @@ import React from "react";
 const Home = () => {
     return (
         <>
-            <h1>Template JM 2.0</h1>
+            <h1>Template React 2.0 JM</h1>
         </>
     );
 }
