@@ -3,7 +3,16 @@ import React from "react";
 const Home = () => {
     return (
         <>
-            <h1>Template React 2.0 JM</h1>
+            <section>
+                <div class="container-fluid">
+                    <h1>Section</h1>
+                </div>
+            </section>
+            <main>
+                <div class="container-fluid">
+                    <h1>Main</h1>
+                </div>
+            </main>
         </>
     );
 }

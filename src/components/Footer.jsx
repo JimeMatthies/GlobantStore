@@ -1,20 +1,13 @@
 import React from "react";
-import PropTypes from "prop-types";
 
-const Footer = ({ footer }) => {
+const Footer = () => {
     return (
-        <div className="container-fluid">
-            <div className="row">
-                <div className="footer col-lg-12 text-center pt-3 fixed-bottom text-white">
-                    <p>Copyright &copy; {footer.text} </p>
-                </div>
+        <footer>
+            <div className="container-fluid">
+                <h1>Footer</h1>
             </div>
-        </div>
+        </footer>
     );
 }
-
-Footer.propTypes = {
-    footer: PropTypes.object.isRequired,
-};
 
 export default Footer;
