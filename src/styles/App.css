@@ -23,9 +23,34 @@ header {
 	height: 152px;
 }
 
-section {
+section#hero {
 	border: 1px solid purple;
 	height: 340px;
+	background-image: url('../../public/assets/hero_bg.jpg');
+	background-color: purple;
+	background-size: cover;
+	background-position: top center;
+}
+
+section#hero .container-fluid {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.title-container span {
+	display: block;
+	color: white;
+	font-weight: 700;
+}
+
+.title-container span:first-child {
+	font-size: 40px;
+}
+
+.title-container span:last-child {
+	font-size: 100px;
+	line-height: 80px;
 }
 
 main {
@@ -40,11 +65,9 @@ main {
 }
 
 .product-card {
-	background-color: #F0F0F0;
+	background-color: #f0f0f0;
 	border-radius: 14px;
 	width: auto;
-/* 	max-width: 25%;
-	overflow: hidden; */
 }
 
 .product-img {
@@ -67,7 +90,7 @@ main {
 	display: block;
 }
 
-.product-description{
+.product-description {
 	font-size: 12px;
 	font-weight: 400;
 	color: #383838;
@@ -93,7 +116,7 @@ main {
 	color: #428f13;
 }
 
-.product-tax-policy{
+.product-tax-policy {
 	font-size: 11px;
 	font-weight: 300;
 }
