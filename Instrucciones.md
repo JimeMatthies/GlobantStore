@@ -1,17 +1,17 @@
-# Crear estructura del proyecto 
+# Crear estructura del proyecto
 
-- __tests__
+- **tests**
 - public
-    - index.html
+  - index.html
 - src
-    - App.js
-    - index.js
+  - App.js
+  - index.js
 - .babelrc
 - .gitignore
 - package.json
 - webpack.config.js
 
-## Iniciar nuestro archivo ***package.json***
+## Iniciar nuestro archivo **_package.json_**
 
     $ npm init -y
 
@@ -25,7 +25,7 @@
 
 ## Instalar dependencias de archivos (css, img, etc)
 
-    $ npm i --save-dev html-webpack-plugin mini-css-extract-plugin clean-webpack-plugin autoprefixer postcss-loader css-loader node-sass sass-loader file-loader style-loader url-loader 
+    $ npm i --save-dev html-webpack-plugin mini-css-extract-plugin clean-webpack-plugin autoprefixer postcss-loader css-loader node-sass sass-loader file-loader style-loader url-loader
 
 ## Instalar dependencias de React (stable) 18
 
@@ -77,21 +77,24 @@
 
 ## Agregar al archivo webpack.config.js
 
-Agregar los import de las dependencias en el ***webpack.config.js***:
+Agregar los import de las dependencias en el **_webpack.config.js_**:
+
 ```javascript
-    const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-    const HtmlWebpackPlugin = require('html-webpack-plugin');
-    const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-    const Dotenv = require('dotenv-webpack');
-    const path = require('path');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const Dotenv = require('dotenv-webpack');
+const path = require('path');
 ```
 
-Export modulo en el ***webpack.config.js***:
+Export modulo en el **_webpack.config.js_**:
+
 ```javascript
-    module.exports = {}
+module.exports = {};
 ```
 
-Definir "entry" en el ***webpack.config.js***
+Definir "entry" en el **_webpack.config.js_**
+
 ```javascript
     module.exports = {
         ...
@@ -99,7 +102,9 @@ Definir "entry" en el ***webpack.config.js***
         ...
     }
 ```
-Definir "output" en el ***webpack.config.js***
+
+Definir "output" en el **_webpack.config.js_**
+
 ```javascript
     module.exports = {
         ...
@@ -112,8 +117,10 @@ Definir "output" en el ***webpack.config.js***
     }
 ```
 
-Definir "rules" en el ***webpack.config.js***
+Definir "rules" en el **_webpack.config.js_**
+
 - Agregar Regla para babel
+
 ```javascript
     module.exports = {
         ...
@@ -131,7 +138,9 @@ Definir "rules" en el ***webpack.config.js***
         ...
     }
 ```
+
 - Agregar Regla para imagenes
+
 ```javascript
     module.exports = {
         ...
@@ -150,7 +159,9 @@ Definir "rules" en el ***webpack.config.js***
         ...
     }
 ```
+
 - Agregar Regla para archivos css o sass
+
 ```javascript
     module.exports = {
         ...
@@ -168,7 +179,8 @@ Definir "rules" en el ***webpack.config.js***
     }
 ```
 
-Definir "resolve" en el ***webpack.config.js***
+Definir "resolve" en el **_webpack.config.js_**
+
 ```javascript
     module.exports = {
         ...
@@ -179,7 +191,8 @@ Definir "resolve" en el ***webpack.config.js***
     }
 ```
 
-Definir "devServer" en el ***webpack.config.js***
+Definir "devServer" en el **_webpack.config.js_**
+
 ```javascript
     module.exports = {
         ...
@@ -195,7 +208,8 @@ Definir "devServer" en el ***webpack.config.js***
     }
 ```
 
-Definir "plugins" en el ***webpack.config.js***
+Definir "plugins" en el **_webpack.config.js_**
+
 ```javascript
     module.exports = {
         ...
@@ -214,7 +228,8 @@ Definir "plugins" en el ***webpack.config.js***
     }
 ```
 
-Configurar "scripts" en el ***package.json***
+Configurar "scripts" en el **_package.json_**
+
 ```json
     {
         ...
@@ -228,7 +243,8 @@ Configurar "scripts" en el ***package.json***
     }
 
 ```
-## Incluir codigo en el ***./src/index.js***
+
+## Incluir codigo en el **_./src/index.js_**
 
 ```javascript
 import React from 'react';
@@ -240,31 +256,26 @@ import './styles/App.css';
 
 const root = ReactDOM.createRoot(document.querySelector('#root'));
 root.render(<App {...data} />);
-
 ```
 
-## Incluir en el ***./src/App.js***
+## Incluir en el **_./src/App.js_**
+
 ```javascript
-import React from "react";
+import React from 'react';
 
 const App = () => {
-    return (
-        <>
-            
-        </>
-    )
-}
+	return <></>;
+};
 
 export default App;
-
 ```
-
 
 ## Instalar "Jest" para pruebas unitarias (opcional)
 
     $ npm i --save-dev jest
 
-Configurar "scripts" en el ***package.json***
+Configurar "scripts" en el **_package.json_**
+
 ```json
     {
         ...
@@ -281,10 +292,11 @@ Configurar "scripts" en el ***package.json***
 
     $ npm i --save bootstrap
 
-Configurar bootstrap en el ***index.js***
+Configurar bootstrap en el **_index.js_**
+
 ```javascript
-    import 'bootstrap';
-    import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 ```
 
 ## Instalar Prop-Types (opcional)

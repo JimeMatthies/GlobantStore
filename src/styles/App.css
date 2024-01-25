@@ -1,39 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@100&display=swap');
 
 body {
-    background-color: white;
-    margin: 0;
+	background-color: white;
+	margin: 0;
 }
 
 .container-fluid {
-    width: 1220px;
-    margin: 0 auto;
-    border: 1px solid springgreen;
-    height: inherit;
-    min-height: inherit;
+	width: 1220px;
+	margin: 0 auto;
+	border: 1px solid springgreen;
+	height: inherit;
+	min-height: inherit;
 }
 
 .footer {
-    background-color: rgb(46, 46, 46);
-    font-family: 'Rokkitt', serif;
+	background-color: rgb(46, 46, 46);
+	font-family: 'Rokkitt', serif;
 }
 
 header {
-    border: 1px solid red;
-    height: 152px;
+	border: 1px solid red;
+	height: 152px;
 }
 
 section {
-    border: 1px solid purple;
-    height: 340px;
+	border: 1px solid purple;
+	height: 340px;
 }
-  
+
 main {
-    border: 1px solid blue;
-    height: auto;
+	border: 1px solid blue;
+	height: auto;
 }
-  
+
 footer {
-    border: 1px solid #009145;
-    min-height: 368px;
+	border: 1px solid #009145;
+	min-height: 368px;
 }
