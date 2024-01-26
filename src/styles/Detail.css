@@ -1,0 +1,125 @@
+.product-images-block {
+	flex: 1;
+	max-width: 100%;
+	overflow: hidden;
+}
+
+.product-images-block .thumbnail-container {
+	max-width: 100%;
+	overflow: hidden;
+	margin: 5px;
+	border: 1px solid #ccc;
+}
+
+.product-images-block .thumbnail-container img {
+	max-width: 100%;
+	height: auto;
+	object-fit: contain;
+	object-position: center center;
+}
+
+.product-description-block {
+	flex: 1;
+}
+
+.product-description-block .title {
+	color: #7525a7;
+	font-size: 24px;
+	font-weight: bold;
+	margin-top: 0;
+	word-wrap: break-word;
+}
+
+.product-description-block .selector fieldset {
+	border: none;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 15px;
+}
+
+.product-description-block .selector select {
+	width: 100%;
+	height: 40px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	padding: 0 10px;
+}
+
+.product-description-block .description {
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.product-checkout-block {
+	flex: 1;
+}
+
+.checkout-container {
+	background-color: #ebebeb;
+	padding: 33px;
+	border-radius: 2px;
+}
+
+.checkout-total-label {
+	color: #ff3b3c;
+}
+
+.checkout-total-price {
+	font-size: 28px;
+	font-weight: 700;
+	margin-top: 10px;
+}
+
+.checkout-description {
+	line-height: 20.4px;
+	word-wrap: break-word;
+}
+
+.checkout-policy-list {
+	list-style-type: none;
+	margin-bottom: 30px;
+}
+
+.checkout-policy-list li {
+	display: flex;
+	margin: 15px 0;
+}
+
+.checkout-policy-list li .policy-icon {
+	margin-right: 15px;
+}
+
+.checkout-process .top {
+	display: flex; /* Alinea el input y el botón horizontalmente */
+	margin-bottom: 10px; /* Espacio debajo del grupo superior */
+}
+
+.checkout-process .top input {
+	height: 40px;
+	border-radius: 10px;
+	border: none;
+	width: 62px;
+	margin-right: 10px;
+	padding: 0 10px 0 20px;
+	box-sizing: border-box;
+}
+
+.btn-primary {
+	width: 100%;
+	background: #ff3b3c;
+	color: white;
+	font-weight: bold;
+	border: none;
+	height: 40px;
+	border-radius: 10px;
+}
+
+.btn-outline {
+	width: 100%;
+	border: 1px solid #ff3b3c;
+	color: #ff3b3c;
+	font-weight: bold;
+	height: 40px;
+	border-radius: 10px;
+}

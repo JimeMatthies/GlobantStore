@@ -3,7 +3,7 @@ import React from 'react';
 const Header = () => {
 	return (
 		<header>
-			<div className='container-fluid'>
+			<div className='container'>
 				<div className='search'>
 					<div className='logo'>
 						<img

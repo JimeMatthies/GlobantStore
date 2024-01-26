@@ -1,11 +1,12 @@
 import React from 'react';
 import Card from '../components/Card';
+import '../styles/Home.css';
 
 const Home = () => {
 	return (
 		<>
 			<section id='hero'>
-				<div className='container-fluid'>
+				<div className='container'>
 					<div className='title-container'>
 						<span>tecnología</span>
 						<span>renovada</span>
@@ -13,7 +14,7 @@ const Home = () => {
 				</div>
 			</section>
 			<main>
-				<div className='container-fluid'>
+				<div className='container'>
 					<div className='product-container'>
 						<Card />
 						<Card />
